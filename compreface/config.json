@@ -1,12 +1,17 @@
 {
   "name": "Exadel CompreFace",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "url": "https://github.com/exadel-inc/CompreFace",
   "slug": "compreface",
   "description": "Exadel CompreFace is a leading free and open-source face recognition system",
   "arch": ["amd64"],
   "startup": "application",
   "boot": "auto",
+  "ingress": true,
+  "ingress_port": 8000,
+  "ports_description": {
+    "8000/tcp": "Web interface (not required for Home Assistant ingress)"
+  },
   "ports": {
     "80/tcp": 8000
   },
