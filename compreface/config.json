@@ -9,9 +9,6 @@
   "boot": "auto",
   "ingress": true,
   "ingress_port": 8000,
-  "ports_description": {
-    "8000/tcp": "Web interface (not required for Home Assistant ingress)"
-  },
   "ports": {
     "80/tcp": 8000
   },
